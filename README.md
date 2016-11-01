@@ -1,2 +1,8 @@
 # StockTicker
 Displays a live stream of four stock market values: .DJI, .IXIC, .INX, and VTI
+
+This script uses R to navigate to the individual Google Finance pages for the four values listed above, and using some simple regex and other commands, scrapes the current stock value, stores it, and plots the value. The script is not equipped with any long-term memory, so this is only useful for a single day view of the stock market. Because of the way the script runs, when you first execute it, it may take up to a minute for results to display; from there the charts will continue to mature throughout the day (although the script only provides meaningful data during the hours that the respective stock markets are open.)
+
+The real purpose of this script is not stock watching. Rather, this is a demonstration of the control of time in an R script. Instead of running a discreet script against a static input and producing a static output, this script uses conditional statements and loops to run continuously and execute programmatically, when the user desires (as opposed to running when it's told according to the pressing of a button). While the demonstration illustrates the harvesting of stock data once a minute, it could just as easily have been programmed to do something else at some other interval (e.g., reading a spreadsheet stored in a shared environment and publishing a report every morning at 6 AM).
+
+Please note that this script is provided for entertainment purposes only. This script does not provide investment advice. Nothing about this script should be understood to advocate for or against any particular investment program, or for the .DJI, .IXIC, .INX, or VTI. Do not make investment decisions based on this script.
